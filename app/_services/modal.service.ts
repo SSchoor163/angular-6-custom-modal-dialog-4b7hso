@@ -22,4 +22,9 @@ export class ModalService {
         let modal: any = this.modals.filter(x => x.id === id)[0];
         modal.close();
     }
+    submit(id: string){
+      console.log("You closed modal " + id);
+      let modal: any= this.modals.filter(x=>x.id==id)[0];
+      modal.close();
+    }
 }

@@ -20,4 +20,8 @@ export class HomeComponent implements OnInit {
     closeModal(id: string) {
         this.modalService.close(id);
     }
+    submitModal(id: string){
+      window.alert("Alert, you submitted the modal");
+      this.modalService.submit(id);
+    }
 }

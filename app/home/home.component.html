@@ -12,16 +12,18 @@
             <p>
                 Home page text: <input type="text" [(ngModel)]="bodyText" />
             </p>
+            <button (click)="submitModal('custom-modal-1');">Submit</button>
             <button (click)="closeModal('custom-modal-1');">Close</button>
         </div>
     </div>
-    <div class="modal-background"></div>
+    <div class="modal-background"style="width:300px;"></div>
 </modal>
 
 <modal id="custom-modal-2">
     <div class="modal">
         <div class="modal-body">
             <h1 style="height:1000px">A Tall Custom Modal!</h1>
+            <button (click)="submitModal('custom-modal-1');">Submit</button>
             <button (click)="closeModal('custom-modal-2');">Close</button>
         </div>
     </div>
